@@ -31,15 +31,14 @@ try {
   // Настройки вашей почты
   $mail->Host   = 'smtp.yandex.ru';// SMTP сервера вашей почты
   $mail->Username   = 'mailer.sender.mailer';  // Логин на почте
-  $mail->Password   = 'mmrljjpjlwkcrbok'; // Пароль на почте
+  $mail->Password   = 'password'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('mailer.sender.mailer@yandex.com', 'Сыроварня'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('sender', 'Сыроварня'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('work-biznesrost24@yandex.ru');
-  $mail->addAddress('89531544087@mail.ru');
+  $mail->addAddress('recipient');
   
 
   // Отправка сообщения
